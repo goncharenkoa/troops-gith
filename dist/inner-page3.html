@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css.map">
+	</head>
+  	<body>
+  		<div class="container-fluid inner-backgr">
+  			<header class="header-inner-page">
+  				<nav class="navbar navbar-default">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="search-form text-center clearfix">
+		  					<form class="form-inline">
+			  					<div class="dropdown">
+								  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								    Je cherche <span>un candidat</span>
+								    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+								  </button>
+								  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								    <li><a href="#">test1</a></li>
+								    <li><a href="#">test2</a></li>
+								  </ul>
+								</div>
+							  <div class="form-group">
+							    <input type="text" class="form-control" placeholder="Métier">
+							  </div>
+							  <div class="form-group">
+							    <input type="email" class="form-control" placeholder="Localisation">
+							  </div>
+							  <button type="submit" class="btn btn-default">Je trouve</button>
+							</form>
+		  				</div>
+				    </div><!-- /.navbar-collapse -->
+				</nav>
+  			</header><!-- header -->
+  		</div><!-- inner-backgr -->
+  		<main class="inner-page-main">
+  			<div class="container-fluid inner-page-main-top text-center clearfix">
+  				<div class="inner-page-main-top-wrapper">
+  					<h2 class="col-xs-12 col-sm-4">Troops a trouvé<span>124 candidats</span></h2>
+  					<p class="col-xs-12 col-sm-4">Compléter votre profil pour accéder aux détails</p>
+  				</div><!-- inner-page-main-top-wrapper -->
+  			</div>
+  			<div class="main-content">
+  				<div class="main-content-top summary">
+  					<h3 class="col-xs-12">Recapitulatif</span></h3>
+	  				<ul>
+	  					<li>Société : <span>Troops</span></li>
+	  					<li>Email: <a href="mailto:email@troops.fr">email@troops.fr</a></li>
+	  					<li>Nom : <span>Doe</span></li>
+	  					<li>Prénom : <span>John</span></li>
+	  					<li>Tél. <a href="tel: 01 02 03 04 05">: 01 02 03 04 05</a></li>
+	  					<li>CP <span>:75001</span> </li>
+	  				</ul>
+  				</div>
+  				<div class="container">
+  					<div class="col-xs-12 clearfix">
+  						<div class="col-xs-4 page-number">3/3</div>
+  						<div class="col-xs-4 col-md-4 pull-right completeness">35% <span>du profil complété</span></div>
+  					</div>
+  					<form class="form-steps col-xs-12 clearfix">
+					  <div class="form-center">
+						  <div class="col-xs-12 form-group">
+						  	<input class="form-control" value="password" autocomplete="off" placeholder="eg. &bull;" type="password" name="user[password]" id="exampleInputPassword1">
+						    <label for="exampleInputPassword1">choisir un mot de passe</label>
+						  </div>
+						  <div class="col-xs-12 form-group">
+						    <input class="form-control" value="password" autocomplete="off" placeholder="eg. &bull;" type="password" name="user[password]" id="exampleInputPassword2">
+						    <label for="exampleInputPassword2">confirmer le mot de passe</label>
+						  </div>
+					  </div><!-- form-center -->
+					  <div class="col-xs-12 form-group valid">
+					    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#offer-modal">Je valide</button>
+					  </div>
+					</form>
+					<div class="col-xs-12 third-step">
+						<div class="col-xs-12 col-sm-4 return">
+							<a href=""><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Retour</a>
+						</div>
+					</div>
+  				</div>
+  			</div>
+  		</main><!-- main -->
+
+	<!-- Modal -->
+	<div id="offer-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+			    <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    <h4 class="modal-title">Merci de votre inscription. <br>Vous allez recevoir un mail de confirmation.</h4>
+			    </div>
+			    <div class="modal-body">
+			    	<h3>Soyez plus visible !</h3>
+			    	<div class="modal-body-content row clearfix">
+			    		<div class="col-xs-6">
+			    			<p>
+			    				Complétez à 100% <br> votre profil et profitez de
+			    			</p>
+			    		</div>
+			    		<div class="col-xs-6">
+			    			<p>
+			    				5 <sup>&euro;</sup>
+			    				<span>offert<sup>&lowast;</sup></span>
+			    			</p>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="modal-footer clearfix">
+			    	<div class="col-xs-6">
+			    		<button type="button" class="btn btn-info">Plus tard</button>
+			    	</div>
+			    	<div class="col-xs-6">
+			    		<button type="button" class="btn btn-submit">Je complète</button>
+			    	</div>
+			    </div>
+	    	</div><!-- modal-content -->
+	    	<p><sup>&lowast;</sup> voir les conditions spécifiques</p>
+	  	</div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

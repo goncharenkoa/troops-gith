@@ -1,0 +1,135 @@
+@media screen and (max-width: 767px) {
+	.search-form {
+		.form-inline {
+			position: relative;
+			.dropdown  {
+				position: static;
+				float: none;
+				.dropdown-menu {
+					position: relative;
+					float: none;
+					margin-bottom: 15px;
+					right: 0;
+					left: 0;
+					width: 100%;
+					background-clip: initial;
+				}
+			}
+		}
+	}
+
+	//inner-page-top
+	.inner-backgr {
+		height: auto;
+	}
+	.inner-backgr {
+		background-position: center center;
+	}
+	//inner-main-top
+	.inner-page-main-top {
+		h2 {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+		p {
+			display: block;
+		}
+	}
+	.main-content {
+		h3 {
+			text-align: center;
+		}
+	}
+	.social-btn {
+		width: 100%;
+	}
+	.dropdown-group {
+		padding: 0;
+	}
+	.summary {
+		padding: 0 15px;
+	}
+
+	.next-step {
+		a {
+			font-size: 12px;
+		}
+	}
+	.return {
+		a {
+			font-size: 12px;
+		}
+	}
+	.manual-validate-btn {
+		font-size: 12px;
+	}
+
+	.valid {
+	    text-align: center;
+	    padding: 0 15px;
+	    max-width: 375px;
+	    margin: 0 auto 20px;
+	    float: none;
+	    button {
+	    	width: 100%;
+	    }
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.search-form {
+		.form-inline {
+			.dropdown {
+				float: left;
+				.dropdown-menu {
+					font: normal 16px/12px $helvetica;
+				}
+				.btn {
+					font: normal 16px/35px $helvetica;
+				}
+			}
+			.form-control {
+				font: normal 16px/12px $helvetica;
+				@include placeholder {
+					font: normal 16px/40px $helvetica;
+				}
+			}
+		}
+	}
+	button[type="submit"] {
+		font-size: 16px;
+	}
+
+	//inner-main-top
+	.inner-page-main-top {
+		padding: 0 20px;
+	}
+
+	.summary {
+		padding: 0 15px;
+		h3 {
+			padding: 0;
+		}
+	}
+	.next-step {
+		a {
+			font-size: 15px;
+		}
+	}
+	.return {
+		a {
+			font-size: 15px;
+		}
+	}
+	.manual-validate-btn {
+		font-size: 15px;
+	}
+	.third-step {
+		.return {
+			position: relative;
+			@media screen and (min-width: 768px) {
+				top: -43px;
+			}
+		}
+	}
+}

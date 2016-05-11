@@ -1,0 +1,95 @@
+.search-form {
+	background: rgba(0,0,0,0.8);
+	padding: 21px 0;
+	.form-inline {
+		display: inline-block;
+		.dropdown {
+			float: left;
+			.dropdown-menu {
+				right: 10px;
+				left: 10px;
+				font: normal 20px/12px $helvetica;
+				@include border-radius(0);
+				border: 1px solid $green;
+				li {
+					a {
+						color: $light-grey;
+					}
+				}
+			}
+			.btn {
+				background: none;
+				border: none;
+				color: $white;
+				font: normal 20px/35px $helvetica;
+				padding: 0 7px;
+				span {
+					font-weight: 500;
+				}
+			}
+			i {
+				font-size: 10px;
+				vertical-align: middle;
+			}
+		}
+		.form-group {
+			@media screen and (min-width: 767px) {
+				display: block;
+				float: left;
+			}
+		}
+		.form-control {
+			height: 40px;
+			border-color: $green;
+			@include border-radius(0);
+			color: $light-grey;
+			font: normal 20px/12px $helvetica;
+			padding: 0 18px;
+			@include placeholder {
+				color: $light-grey;
+				font: normal 20px/40px $helvetica;
+			}
+			@media screen and (min-width: 1200px) {
+				min-width: 315px;
+			}
+		}
+	}
+}
+label {
+	color: #898989;
+	font: 300 14px/22px $helvetica;
+	text-transform: uppercase;
+}
+.form-steps {
+	padding: 27px 0 0px;
+	.form-group {
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 33px;
+		}
+	}
+	.form-control {
+		border: none;
+		@include border-radius(0);
+		@include box-shadow(inset, 0, 0, 0, 0);
+		border-bottom: 1px solid $green;
+		color: black;
+		font: 300 18px/18px $helvetica;
+		padding: 0;
+		@include placeholder {
+			color: black;
+			font: 300 18px/18px $helvetica;
+		}
+	}
+}
+.form-center {
+	max-width: 375px;
+	margin: 0 auto;
+}
+.valid {
+	text-align: right;
+	button {
+		width: 375px;
+		display: inline-block;
+		color: $white;
+	}
+}

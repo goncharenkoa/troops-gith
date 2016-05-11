@@ -1,0 +1,39 @@
+.navbar-default {
+	background: none;
+	border: none;
+}
+.navbar-nav {
+	float: right;
+}
+.navbar-default {
+	.navbar-nav {
+		> li {
+			> a {
+				color: $white;
+				padding: 0 27px 0 0;
+				&:hover {
+					color: $white;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background: none;
+	color: $white;
+}
+.navbar-default {
+	.navbar-collapse, .navbar-form {
+		padding: 17px 20px 0;
+	}
+}
+.header-inner-page {
+	.navbar-default {
+		.navbar-collapse, .navbar-form {
+			padding: 0;
+		}
+	}
+}

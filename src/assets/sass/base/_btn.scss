@@ -1,0 +1,144 @@
+.btn-default {
+	background: $green;
+	color: $white;
+	@include transition(all 2.0s ease-in-out);
+	font: 400 20px $helvetica;
+	@include border-radius(0);
+	&:hover, &:focus, &:active  {
+		background: lighten($green, 10%);
+		color: $white;
+	}
+}
+.register {
+	display: inline-block;
+	background: $white;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 12px;
+	padding: 11px 12px 15px;
+	@include border-radius(0);
+	@include transition(all 2.0s ease-in-out);
+	a {
+		color: $black;
+		display: inline-block;
+		@include Opacity(0.5);
+		&:hover {
+			@include Opacity(0.9);
+		}
+	}
+}
+.btn {
+	border: none;
+	@include border-radius(0);
+	@include transition(all 2.0s ease-in-out);
+}
+
+.btn-group {
+	width: 100%;
+	color: black;
+	font: 300 18px/18px $helvetica;
+	padding: 0;
+	margin-top: 25px;
+	.btn {
+		padding: 6px 0;
+		width: 100%;
+		text-align: left;
+		text-transform: uppercase;
+		border-bottom: 1px solid $green;
+		@include border-radius(0);
+		i {
+			display: inline-block;
+			float: right;
+			font-size: 12px;
+			padding: 2px 0;
+		}
+		&:hover, &:focus {
+			background: none!important;
+			@include box-shadow(inset, 0, 0, 0, 0);
+		}
+	}
+	.dropdown-menu {
+		padding-left: 0;
+		@include border-radius(0);
+		border-color: $green;
+		li {
+			width: 100%;
+			a {
+				font: 300 18px/18px $helvetica;
+			}
+			&:before {
+				content: normal;
+			}
+		}
+	}
+}
+.open > .btn-default.dropdown-toggle, .open > .btn-default.dropdown-toggle:focus {
+	border-color: $green;
+	@include box-shadow(inset, 0, 0, 0, 0);
+	background: none;
+}
+button[type="submit"] {
+	height: 40px;
+	background-color: $green;
+	@include border-radius(0);
+	border: none;
+	color: $white;
+	font-family: $helvetica;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 12px;
+	@include transition(all 1.0s ease-in-out);
+	&:hover {
+		background-color: lighten($green, 10%);
+		color: $white;
+	}
+	@media screen and (min-width: 1200px) {
+		min-width: 185px;
+	}
+}
+.social-btn {
+	background-color: $blue;
+	border: none;
+	color: $white;
+	font: 400 20px $helvetica;
+	padding: 10px 15px;
+	@include transition(all 1.0s ease-in-out);
+	@media screen and (min-width: 1200px) {
+		min-width: 350px;
+	}
+	&:hover {
+		background-color: lighten($blue, 10%);
+	}
+	i {
+		display: inline-block;
+		padding-left: 12px;
+	}
+}
+.btn-info {
+	border: 1px solid $dark-grey;
+	background: none;
+	color: $dark-silver;
+	font: 400 20px $helvetica;
+	padding: 10px;
+	width: 100%;
+	@include transition(all 1.0s ease-in-out);
+	&:hover {
+		border-color: lighten($dark-silver, 30%);
+		color: lighten($dark-silver, 30%);
+		background: none;
+	}
+}
+.btn-submit {
+	border: 1px solid $green;
+	background: none;
+	color: $green;
+	font: 400 20px $helvetica;
+	padding: 10px;
+	width: 100%;
+	@include transition(all 1.0s ease-in-out);
+	&:hover {
+		border-color: lighten($green, 30%);
+		color: lighten($green, 30%);
+		background: none;
+	}
+}
