@@ -32,7 +32,14 @@
 	@include border-radius(0);
 	@include transition(all 2.0s ease-in-out);
 }
-
+button.close {
+	color: $white;
+	@include Opacity(1);
+	&:hover, &:focus {
+		@include Opacity(0.5);
+		color: $white;
+	}
+}
 .btn-group {
 	width: 100%;
 	color: black;
@@ -46,6 +53,7 @@
 		text-transform: uppercase;
 		border-bottom: 1px solid $green;
 		@include border-radius(0);
+		background: none;
 		i {
 			display: inline-block;
 			float: right;
@@ -140,5 +148,17 @@ button[type="submit"] {
 		border-color: lighten($green, 30%);
 		color: lighten($green, 30%);
 		background: none;
+	}
+}
+.more-info {
+	button {
+		background: none;
+		color: $green;
+		display: inline-block;
+		font: 500 16px $helvetica;
+		&:hover {
+			background: none;
+			color: lighten($green, 10%);
+		}
 	}
 }

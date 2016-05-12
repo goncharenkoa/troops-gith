@@ -2,3 +2,23 @@
 	display: inline-block;
 	padding: 29px 0 0 52px;
 }
+.mini-cart {
+	position: relative;
+	.quantity {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+		background: $pink;
+		@include border-radius(50%);
+		color: $white;
+		font: 700 14px/20px $helvetica;
+		position: absolute;
+		top: 15px;
+    	left: -10px;
+	}
+	i {
+		font-size: 20px;
+	}
+}

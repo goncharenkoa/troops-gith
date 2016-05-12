@@ -9,11 +9,14 @@
 
 
 @import 'layouts/header.scss';
+@import 'layouts/secondary.scss';
 
 
 @import 'modules/nav.scss';
 @import 'modules/content.scss';
 @import 'modules/home.scss';
 @import 'modules/forms.scss';
+@import 'modules/modal.scss';
+@import 'modules/user-page.scss';
 
 @import 'states/_responsive.scss';

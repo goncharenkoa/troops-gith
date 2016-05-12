@@ -4,6 +4,28 @@
 }
 .navbar-nav {
 	float: right;
+	.btn.dropdown-toggle {
+		background: none;
+		padding: 0;
+		color: $white;
+		padding: 0 27px 0 0;
+	}
+	i {
+		color: $white;
+	}
+}
+.navbar-collapse.in {
+	overflow-y: visible;
+}
+.navbar-nav .open .dropdown-menu {
+	position: absolute;
+	background: $white;
+	border: 1px solid $green;
+	li {
+		a {
+			font: normal 14px/14px $helvetica;
+		}
+	}
 }
 .navbar-default {
 	.navbar-nav {
@@ -16,6 +38,16 @@
 					text-decoration: underline;
 				}
 			}
+		}
+	}
+}
+.dropdown-menu {
+	font: normal 20px/12px $helvetica;
+	@include border-radius(0);
+	border: 1px solid $green;
+	li {
+		a {
+			font: normal 18px/18px $helvetica;
 		}
 	}
 }
