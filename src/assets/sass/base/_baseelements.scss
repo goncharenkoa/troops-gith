@@ -90,6 +90,7 @@ button {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 
@@ -119,4 +120,21 @@ button {
 
 .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
   outline: none; /* focus style */
+}
+.scrollable.default-skin .scroll-bar .thumb {
+	background: #b8e5b4;
+	@include border-radius(0);
+	width: 7px;
+	margin-left: -3px;
+	@include Opacity(1);
+}
+.scrollable.default-skin .scroll-bar.vertical {
+	background: #b8e5b4;
+	@include border-radius(0);
+	width: 1px;
+}
+.scrollable .viewport .overview {
+    position: absolute;
+    left: 0;
+    right: 0;
 }

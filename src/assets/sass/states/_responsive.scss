@@ -189,8 +189,37 @@
 	.progress-value {
 		font-size: 16px;
 	}
+	.last-referrers {
+		border: none;
+		padding: 0;
+	}
+	.experience  {
+		ul {
+			height: auto;
+		}
+	}
+	.experience-list {
+		padding: 0;
+	}
+	.comments{
+		padding: 0;
+	}
+	.download-cv {
+		padding-left: 0;
+		button {
+			font-size: 12px;
+			margin: 0;
+		}
+	}
+	.select-btn {
+		padding-right: 0;
+		button {
+			font-size: 12px;
+			margin: 0;
+		}
+	}
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1290px) {
 	.search-form {
 		.form-inline {
 			.dropdown {
@@ -245,5 +274,39 @@
 				top: -43px;
 			}
 		}
+	}
+	.secondary {
+	    padding: 25px 0 25px 10px;
+	}
+	.main-content .secondary ul.lang li ul li {
+		padding: 10px 3px;
+	    margin-right: 0px;
+	    font-size: 10px;
+	}
+	.main-content .secondary ul.lang li span {
+		padding-top: 15px;
+	}
+	table h2 {
+		font-size: 11px;
+	}
+	table td tr td:first-child {
+		font-size: 13px;
+	}
+	.user-icon {
+		img {
+			display: block;
+			float: left;
+			padding-right: 5px;
+		}
+	}
+	.progress {
+		width: 50%;
+	}
+	.progress-value {
+		font-size: 16px;
+	}
+	.last-referrers {
+		border: none;
+		padding: 0;
 	}
 }

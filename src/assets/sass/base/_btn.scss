@@ -31,6 +31,10 @@
 	border: none;
 	@include border-radius(0);
 	@include transition(all 2.0s ease-in-out);
+	&:hover, &:focus, &:active  {
+		border: none;
+		outline: none;
+	}
 }
 button.close {
 	color: $white;
@@ -150,15 +154,67 @@ button[type="submit"] {
 		background: none;
 	}
 }
+.dropup, .dropdown {
+	display: inline-block;
+}
 .more-info {
+	margin-bottom: 30px;
 	button {
 		background: none;
 		color: $green;
 		display: inline-block;
 		font: 500 16px $helvetica;
-		&:hover {
+		&:hover, &:focus, &:active {
 			background: none;
 			color: lighten($green, 10%);
+		}
+	}
+	.dropdown-menu {
+		margin: 0;
+		padding: 0;
+		li {
+			display: block;
+			&:before {
+				content: normal;
+			}
+			a {
+				color: $black;
+				display: block;
+				font: 500 16px $helvetica;
+			}
+		}
+	}
+}
+.download-cv {
+	padding-left: 0;
+	button {
+		width: 100%;
+		background-color: #cdcdcd;
+		border: none;
+		text-transform: uppercase;
+		color: $black;
+		padding: 20px;
+		font: 700 16px $helvetica;
+		margin-right: 10px;
+		@include transition(all 1.0s ease-in-out);
+		&:hover {
+			background-color: lighten(#cdcdcd, 10%);
+		}
+	}
+}
+.select-btn {
+	button {
+		width: 100%;
+		background-color: $pink;
+		border: none;
+		text-transform: uppercase;
+		color: $white;
+		padding: 20px;
+		font: 700 16px $helvetica;
+		margin-left: 10px;
+		@include transition(all 1.0s ease-in-out);
+		&:hover {
+			background-color: lighten($pink, 10%);
 		}
 	}
 }
