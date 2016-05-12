@@ -6379,6 +6379,14 @@ button[type="submit"] {
   background-size: cover;
   background-position: center -400px; }
 
+section .inner-backgr {
+  height: 183px;
+  background-position: 0 0;
+  padding-top: 50px; }
+
+section .inner-page-main {
+  margin: 0; }
+
 .inner-page-main {
   padding-bottom: 50px; }
   @media screen and (min-width: 768px) {
@@ -7085,10 +7093,15 @@ table {
         left: 0;
         width: 100%;
         background-clip: initial; }
+  section .inner-backgr {
+    background: url("../img/hp-bgr.jpg") 0 0 no-repeat;
+    height: auto;
+    overflow-x: inherit; }
   .inner-backgr {
     height: auto; }
   .inner-backgr {
-    background-position: center center; }
+    background-position: center center;
+    height: auto; }
   .inner-page-main-top h2 {
     display: block;
     float: none;
@@ -7237,6 +7250,10 @@ table {
     font-size: 16px; }
   .inner-page-main-top {
     padding: 0 20px; }
+  section .inner-backgr {
+    background: url("../img/hp-bgr.jpg") 0 0 no-repeat;
+    height: auto;
+    overflow-x: inherit; }
   .summary {
     padding: 0 15px; }
     .summary h3 {

@@ -26,11 +26,19 @@
 	}
 
 	//inner-page-top
+	section {
+		.inner-backgr {
+			background: url("../img/hp-bgr.jpg") 0 0 no-repeat;
+			height: auto;
+			overflow-x: inherit;
+		}
+	}
 	.inner-backgr {
 		height: auto;
 	}
 	.inner-backgr {
 		background-position: center center;
+		height: auto;
 	}
 	//inner-main-top
 	.inner-page-main-top {
@@ -247,7 +255,13 @@
 	.inner-page-main-top {
 		padding: 0 20px;
 	}
-
+	section {
+		.inner-backgr {
+			background: url("../img/hp-bgr.jpg") 0 0 no-repeat;
+			height: auto;
+			overflow-x: inherit;
+		}
+	}
 	.summary {
 		padding: 0 15px;
 		h3 {

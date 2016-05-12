@@ -6,7 +6,16 @@
 	@include cover-background("../img/hp-bgr.jpg");
 	background-position: center -400px;
 }
-
+section {
+	.inner-backgr {
+		height: 183px;
+		background-position: 0 0;
+		padding-top: 50px;
+	}
+	.inner-page-main {
+		margin: 0;
+	}
+}
 .inner-page-main {
 	padding-bottom: 50px;
 	@media screen and (min-width: 768px) {
