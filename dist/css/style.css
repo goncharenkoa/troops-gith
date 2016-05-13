@@ -6033,6 +6033,9 @@ button:focus {
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
       filter: alpha(opacity=90); }
 
+.form-inline .btn {
+  height: 40px; }
+
 .btn {
   border: none;
   -webkit-border-radius: 0;
@@ -7102,12 +7105,16 @@ table {
   .inner-backgr {
     background-position: center center;
     height: auto; }
-  .inner-page-main-top h2 {
-    display: block;
-    float: none;
-    text-align: center; }
-  .inner-page-main-top p {
-    display: block; }
+  .inner-page-main-top {
+    padding: 10px 0; }
+    .inner-page-main-top h2 {
+      display: block;
+      float: none;
+      text-align: center;
+      margin: 0; }
+    .inner-page-main-top p {
+      display: block;
+      line-height: 20px; }
   .main-content {
     display: -webkit-box;
     display: -moz-box;
@@ -7120,7 +7127,17 @@ table {
     -webkit-flex-flow: column;
     flex-flow: column; }
     .main-content h3 {
-      text-align: center; }
+      text-align: center;
+      margin: 0;
+      font-size: 14px; }
+    .main-content .page-number {
+      font-size: 18px;
+      line-height: 18px; }
+    .main-content .completeness {
+      font-size: 18px;
+      padding: 0; }
+      .main-content .completeness span {
+        font-size: 16px; }
     .main-content .primary {
       -ms-flex-order: 1;
       -webkit-order: 1;
@@ -7129,14 +7146,35 @@ table {
       -ms-flex-order: 2;
       -webkit-order: 2;
       order: 2; }
+  .form-steps {
+    padding-top: 10px; }
+    .form-steps .form-group {
+      margin: 0; }
+      .form-steps .form-group .form-control {
+        height: 24px;
+        font-size: 14px; }
+        .form-steps .form-group .form-control::-webkit-input-placeholder {
+          font-size: 14px; }
+        .form-steps .form-group .form-control:-moz-placeholder {
+          font-size: 14px; }
+        .form-steps .form-group .form-control::-moz-placeholder {
+          font-size: 14px; }
+        .form-steps .form-group .form-control:-ms-input-placeholder {
+          font-size: 14px; }
+      .form-steps .form-group label {
+        line-height: 10px;
+        font-size: 10px; }
   .social-btn {
-    width: 100%; }
+    width: 100%;
+    font-size: 15px;
+    margin-top: 5px; }
   .dropdown-group {
     padding: 0; }
   .summary {
     padding: 0 15px; }
   .next-step a {
-    font-size: 12px; }
+    font-size: 12px;
+    padding-top: 5px; }
   .return a {
     font-size: 12px; }
   .manual-validate-btn {
@@ -7294,5 +7332,59 @@ table {
   .last-referrers {
     border: none;
     padding: 0; } }
+
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+  section .inner-backgr {
+    padding-top: 0; }
+  .navbar-default .navbar-collapse {
+    padding-top: 0; }
+  .inner-page-main-top h2 {
+    font-size: 15px;
+    line-height: 15px; }
+  .inner-page-main-top p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 15px; }
+  .social-btn {
+    padding: 6px 15px; }
+  .info {
+    padding-bottom: 20px; }
+    .info h1 {
+      margin: 5px 0; }
+  .search-form {
+    padding: 14px 0; }
+    .search-form .form-inline {
+      display: block;
+      width: 100%; }
+      .search-form .form-inline div {
+        width: 25%;
+        float: left; }
+      .search-form .form-inline .dropdown {
+        float: left;
+        width: 33%; }
+        .search-form .form-inline .dropdown .btn {
+          font-size: 14px;
+          line-height: 25px; }
+      .search-form .form-inline .btn {
+        float: left;
+        font-size: 14px;
+        height: 25px;
+        line-height: 1; }
+      .search-form .form-inline .form-group {
+        margin: 0; }
+      .search-form .form-inline .form-control {
+        font-size: 14px;
+        height: 25px; }
+        .search-form .form-inline .form-control::-webkit-input-placeholder {
+          font-size: 14px; }
+        .search-form .form-inline .form-control:-moz-placeholder {
+          font-size: 14px; }
+        .search-form .form-inline .form-control::-moz-placeholder {
+          font-size: 14px; }
+        .search-form .form-inline .form-control:-ms-input-placeholder {
+          font-size: 14px; }
+  .form-steps .form-group {
+    width: 50%;
+    float: left; } }
 
 /*# sourceMappingURL=maps/style.css.map */

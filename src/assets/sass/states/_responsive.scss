@@ -42,13 +42,16 @@
 	}
 	//inner-main-top
 	.inner-page-main-top {
+		padding: 10px 0;
 		h2 {
 			display: block;
 			float: none;
 			text-align: center;
+			margin: 0;
 		}
 		p {
 			display: block;
+			line-height: 20px;
 		}
 	}
 	.main-content {
@@ -64,6 +67,19 @@
 	    flex-flow: column;
 		h3 {
 			text-align: center;
+			margin: 0;
+			font-size: 14px;
+		}
+		.page-number {
+			font-size: 18px;
+			line-height: 18px;
+		}
+		.completeness {
+			font-size: 18px;
+			padding: 0;
+			span {
+				font-size: 16px;
+			}
 		}
 		.primary {
 			-ms-flex-order: 1;
@@ -76,8 +92,27 @@
 		    order: 2;
 		}
 	}
+	.form-steps {
+		padding-top: 10px;
+		.form-group {
+			margin: 0;
+			.form-control {
+				height: 24px;
+				font-size: 14px;
+				@include placeholder {
+					font-size: 14px;
+				}
+			}
+			label {
+				line-height: 10px;
+				font-size: 10px;
+			}
+		}
+	}
 	.social-btn {
 		width: 100%;
+		font-size: 15px;
+		margin-top: 5px;
 	}
 	.dropdown-group {
 		padding: 0;
@@ -89,6 +124,7 @@
 	.next-step {
 		a {
 			font-size: 12px;
+			padding-top: 5px;
 		}
 	}
 	.return {
@@ -322,5 +358,75 @@
 	.last-referrers {
 		border: none;
 		padding: 0;
+	}
+}
+
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation : landscape) {
+	section .inner-backgr {
+		padding-top: 0;
+	}
+	.navbar-default .navbar-collapse {
+		padding-top: 0;
+	}
+	.inner-page-main-top {
+		h2 {
+			font-size: 15px;
+			line-height: 15px;
+		}
+		p {
+			margin: 0;
+			font-size: 15px;
+			line-height: 15px;
+		}
+	}
+	.social-btn {
+		padding: 6px 15px;
+	}
+	.info {
+		padding-bottom: 20px;
+		 h1 {
+			margin: 5px 0;
+		}
+	}
+	.search-form {
+		padding: 14px 0;
+		.form-inline {
+			display: block;
+			width: 100%;
+			div {
+				width: 25%;
+				float: left;
+			}
+			.dropdown {
+				float: left;
+				width: 33%;
+				.btn {
+					font-size: 14px;
+					line-height: 25px;
+				}
+			}
+			.btn {
+				float: left;
+				font-size: 14px;
+				height: 25px;
+				line-height: 1;
+			}
+			.form-group {
+				margin: 0;
+			}
+			.form-control {
+				font-size: 14px;
+				height: 25px;
+				@include placeholder {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.form-steps {
+		.form-group {
+			width: 50%;
+			float: left;
+		}
 	}
 }

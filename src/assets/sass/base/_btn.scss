@@ -27,6 +27,11 @@
 		}
 	}
 }
+.form-inline {
+	.btn {
+		height: 40px;
+	}
+}
 .btn {
 	border: none;
 	@include border-radius(0);
