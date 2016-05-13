@@ -2,7 +2,9 @@
 	background-color: $light-silver;
 	padding: 25px 0 25px 30px;
 	position: relative;
-    @include flex(1);
+    @media screen and (min-width: 768px) {
+		 @include flex(1);
+    }
 	h2 {
 		color: $grey;
 		font: 700 20px/22px $helvetica;
