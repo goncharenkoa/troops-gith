@@ -6263,7 +6263,15 @@ button[type="submit"] {
 
 .secondary {
   background-color: #e6e6e6;
-  padding: 25px 0 25px 30px; }
+  padding: 25px 0 25px 30px;
+  position: relative;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
   .secondary h2 {
     color: #5e5e5e;
     font: 700 20px/22px "Helvetica Neue", Arial, sans-serif;
@@ -6427,6 +6435,26 @@ section .inner-page-main {
     display: table-cell;
     vertical-align: bottom;
     float: none; }
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row; }
 
 .main-content {
   background: #fff; }

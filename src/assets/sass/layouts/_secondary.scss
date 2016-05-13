@@ -1,6 +1,8 @@
 .secondary {
 	background-color: $light-silver;
 	padding: 25px 0 25px 30px;
+	position: relative;
+    @include flex(1);
 	h2 {
 		color: $grey;
 		font: 700 20px/22px $helvetica;

@@ -57,7 +57,11 @@ section {
 		float: none;
 	}
 }
-
+.wrapper {
+	width: 100%;
+	@include display(flex);
+    @include flex-direction(row);
+}
 .main-content {
 	background: $white;
 	.primary {
