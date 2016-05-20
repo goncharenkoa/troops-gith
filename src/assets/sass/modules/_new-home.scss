@@ -1,0 +1,58 @@
+.home {
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: #787a7d;
+	position: relative;
+}
+.left-img, .right-img {
+	padding: 0;
+	height: 100%;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		@include transform(skewX(-15deg));
+		@include transition(all 2.0s ease-in-out);
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			@include opacity(1);
+		}
+		&:hover {
+			background: black;
+			img {
+				@include opacity(0.7);
+			}
+		}
+	}
+}
+.home-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.logo-home {
+	display: block;
+	text-align: center;
+	img {
+		display: inline-block;
+    	width: 470px;
+	}
+}
+.home-btn {
+	display: inline-block;
+	border: 4px solid $white;
+	color: $white;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	padding: 20px 30px;
+	&:hover {
+		color: $white;
+	}
+}
