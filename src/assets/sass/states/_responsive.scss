@@ -301,6 +301,53 @@
 			background-size: 30px 35px;
 		}
 	}
+
+	//DASHBOARD
+	.dashboard {
+		.logo {
+			padding: 0!important;
+			max-width: 100px;
+		}
+		.navbar-nav i {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		.navbar-default .navbar-toggle {
+			margin: 0 10px 0 0;
+		}
+		.header-right {
+			display: none;
+		}
+		.thumb {
+			width: 100%;
+			margin-bottom: 20px;
+			div {
+				padding-left: 0;
+			}
+		}
+		.sidebar-nav {
+			padding-top: 45px;
+		}
+		nav.navbar.navbar-default {
+			margin-bottom: 0;
+		}
+		.thumb {
+			a, div {
+				padding: 0;
+			}
+			span {
+				top: 15px;
+			}
+			ul li {
+			margin-bottom: 15px;
+				height: 30px;
+				a {
+					font-size: 15px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 1290px) {
 	.search-form {
@@ -398,6 +445,29 @@
 		border: none;
 		padding: 0;
 	}
+	//Dashboard
+	.header-right {
+		padding: 0;
+		ul {
+			margin-right: 20px;	
+			li {
+				margin: 0;
+			}
+		}
+	}
+	
+	.thumb {
+		width: 49%;
+		div {
+			padding-left: 0;
+		}
+	}
+	.dashboard .navbar-nav i {
+		line-height: 85px;
+	}
+	.logo {
+		max-width: 250px;
+	}
 }
 
 @media screen and (min-width: 568px) and (max-width: 767px) and (orientation : landscape) {
@@ -467,5 +537,58 @@
 			width: 50%;
 			float: left;
 		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.sidebar-nav li a {
+		font-size: 15px;
+	}
+	#sidebar-wrapper .heading a span {
+		font-size: 15px;
+	}
+	#wrapper {
+		padding-left: 100px;
+	}
+	#wrapper.toggled-2 {
+		padding-left: 280px;
+	}
+
+	#sidebar-wrapper {
+	    width: 86px;
+	}
+	 
+	.toggled #sidebar-wrapper {
+	    width: 86px;
+	}
+	.left-inner-addon, .menu-text, .heading {
+	    visibility: hidden; 
+	    opacity: 0;
+	}
+	.toggled-2 #page-content-wrapper {
+		padding-left: 200px;
+		.thumb-container {
+			position: relative;
+			left: 80px;
+			 @include transition(visibility 0.2s linear, opacity 0.2s linear);
+		}
+	}
+
+	.toggled-2 #sidebar-wrapper {
+	    width: 250px;
+	    .left-inner-addon {
+	        opacity: 1;
+	        visibility: visible;
+	        @include transition(visibility 0.2s linear, opacity 0.2s linear);
+	    }
+	    .menu-text {
+	        opacity: 1;
+	        visibility: visible;
+	        @include transition(visibility 0.2s linear, opacity 0.2s linear);
+	    }
+	    .heading {
+	        opacity: 1;
+	        visibility: visible;
+	        @include transition(visibility 0.2s linear, opacity 0.2s linear);
+	    }
 	}
 }

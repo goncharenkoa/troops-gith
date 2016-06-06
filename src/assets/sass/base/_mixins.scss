@@ -37,3 +37,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@mixin scrollable {
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+}
